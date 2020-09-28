@@ -449,3 +449,138 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     padding-bottom: 80px;
     padding-top: 80px;
 }
+
+.intro-page .product-list .product-item {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 0;
+    margin: -2px;
+}
+
+.intro-page .product-list .product-item::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: #32784680;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.intro-page .product-item img {
+    font-size: 0;
+    width: 100%;
+    border: 0;
+    display: block;
+}
+
+.menu-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.menu-page .product-item img {
+    height: 208px;
+    width: 100%;
+}
+
+.menu-page .product-item h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    margin-top: 15px;
+}
+
+
+.menu-page .product-item p.price {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #327846;
+}
+
+.menu-page .product-item button {
+    background: #FFFFFF;
+    border: 1px solid #C80000;
+    box-sizing: border-box;
+    height: 32px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #C80000;
+    padding: 4px 28px;
+}
+
+.menu-page .product-list .product-item {
+    display: inline-block;
+    width: calc(33% - 32px);
+    margin-bottom: 80px;
+    margin-right: 32px;
+}
+
+.paging a.active {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #327846;
+}
+
+.paging a {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 15px;
+}
+
+.side-bar .search-input {
+    position: relative;
+}
+
+.side-bar .search-input input {
+    height: 48px;
+    border-radius: 0;
+    padding-left: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-style: italic;
+
+}
+
+.side-bar .search-input img {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.side-bar h4 {
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.side-bar .categories {
+    list-style: none;
+    margin-top: 32px;
+    padding-left: 0;
+}
+.side-bar .categories li{
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 0;
+}
+
+.side-bar .categories a {
+    display: block;
+    padding: 10px 0;
+    color: #000;
+}
+
+.side-bar .categories a.active {
+    padding: 10px 16px;
+    background: #FFDCBE;
+}
