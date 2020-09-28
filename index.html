@@ -14,14 +14,14 @@
 <body>
     <header id="header">
         <div class="container header-top">
-            <div class="row">
-                <div class="col-md-3 logo">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class=" logo">
                     <img src="image/logo.png" />
                 </div>
-                <div class="col-md-6 logo-name">
-                    <h1 class="headline">NHÀ HÀNG KIẾN MINH</h1>
+                <div class=" logo-name">
+                    <h1>NHÀ HÀNG KIẾN MINH</h1>
                 </div>
-                <div class="col-md-3 pl-0 pr-0">
+                <div class="">
                     <div class="contact d-flex align-items-center">
                         <div class="contact-icon">
                             <img src="/image/phone_green.svg" />
@@ -40,18 +40,32 @@
         </div>
         <div class="container-fluid header-bottom">
             <div class="container">
-                <ul>
-                    <li><a class="active" href="/">Trang chủ</a></li>
+                <a class="btn-bar" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                    aria-controls="collapseExample">
+                <img src="/image/menu.svg" /></a>
+                <div class="search">
+                    <img src="/image/search-white_icon.svg" />
+                </div>
+                <ul class="d-none d-lg-block">
+                    <li><a href="/">Trang chủ</a></li>
                     <li><a href="/intro.html">Giới thiệu</a></li>
                     <li><a href="/menu.html">Thực đơn</a></li>
                     <li><a href="/order.html">Đặt bàn</a></li>
                     <li><a href="/news.html">Tin nổi bật</a></li>
-                    <li><a href="/contact.html">Liên hệ</a></li>
+                    <li><a class="active" href="/contact.html">Liên hệ</a></li>
                 </ul>
-                <div class="search">
-                    <!-- <input placeholder="Tìm kiếm" /> -->
-                    <img src="/image/search-white_icon.svg" />
-                </div>
+
+                <ul class="collapse" id="collapseExample">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="/intro.html">Giới thiệu</a></li>
+                    <li><a href="/menu.html">Thực đơn</a></li>
+                    <li><a href="/order.html">Đặt bàn</a></li>
+                    <li><a href="/news.html">Tin nổi bật</a></li>
+                    <li><a class="active" href="/contact.html">Liên hệ</a></li>
+                    <li><a href="tel:0904 999 222 ">0904 999 222 </a></li>
+                    <li><a href="tel:024 37 345 678 ">024 37 345 678</a></li>
+                    <li><a href="tel: 024 38 789 789 "> 024 38 789 789 </a></li>
+                </ul>
             </div>
         </div>
 

@@ -29,11 +29,6 @@
     font-weight: normal;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1220px;
-    }
-}
 
 .headline {
     font-family: "SFU-helvetica-height";
@@ -52,20 +47,14 @@ a:hover{
     min-height: 96px;
 }
 
-.header-top .logo {
-    min-height: 96px;
-    padding-top: 10px;
-}
 
 .header-top .logo img {
     height: 75px;
 }
-
-.header-top .logo-name {
-    min-height: 96px;
-    padding-top: 20px;
-
+.header-top .d-flex{
+    height: 96px;
 }
+
 
 .header-top .contact {
     min-height: 96px;
@@ -104,13 +93,15 @@ a:hover{
 }
 
 .header-bottom {
-    height: 48px;
+    min-height: 48px;
     background: #327846;
+    overflow: hidden;
 }
 
 .header-bottom ul {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .header-bottom ul li {
@@ -145,10 +136,19 @@ a:hover{
 
 .header-bottom .search {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 10px
 }
-
+.header-bottom .btn-bar{
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    color: white;
+}
+.header-bottom .btn-bar img{
+    height: 24px;
+    width:  24px;
+}
 
 .banner img {
     width: 100%;
@@ -163,6 +163,8 @@ a:hover{
 .banner-intro img {
     width: 100%;
     height: 366px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .banner-intro h4 {
@@ -549,6 +551,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     line-height: 22px;
     color: #327846;
 }
+.paging {
+    margin-bottom: 80px;
+}
 
 .paging a {
     font-size: 16px;
@@ -733,7 +738,67 @@ margin-bottom: 44px;
 
 .contact-page .social-icon{
     margin-top: 53px;
+    margin-bottom: 32px;
 }
-.contact-page .social-icon img{
-    fill: black;
+.header-bottom .btn-bar{
+    display: none;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+.news-detail-page .news-content img{
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .header-top .contact{
+        display: none!important;
+    }
+    .header-bottom ul{
+        padding-top: 40px;
+    }
+    .header-bottom li{
+        display: block!important;
+    }
+    .header-bottom ul li a{
+        padding-left: 0 !important;
+    }
+    .header-bottom .btn-bar{
+        display: block;
+    }
+    .header-top .logo-name h1{
+        font-size: 24px;
+    }
+    #footer .footer-top h3{
+        margin-top: 32px;
+    }
+    .news-item img,
+    .news-item .news-content{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header-top .logo img{
+        height: 60px;
+    }
+    .menu-page .product-list .product-item{
+        width: 100%;
+        margin-right: 0;
+    }
+    .banner-intro h4{
+        margin-top: 32px;
+    }
+    .banner-order form,
+    .banner-order{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banner-title{
+        height: 200px;
+        padding-top: 70px;
+    }
 }
