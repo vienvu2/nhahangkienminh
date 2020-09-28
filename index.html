@@ -42,26 +42,26 @@
             <div class="container">
                 <a class="btn-bar" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                     aria-controls="collapseExample">
-                <img src="image/menu.svg" /></a>
+                    <img src="image/menu.svg" /></a>
                 <div class="search">
                     <img src="image/search-white_icon.svg" />
                 </div>
                 <ul class="d-none d-lg-block">
-                    <li><a  class="active" href="">Trang chủ</a></li>
+                    <li><a class="active" href="">Trang chủ</a></li>
                     <li><a href="intro.html">Giới thiệu</a></li>
                     <li><a href="menu.html">Thực đơn</a></li>
                     <li><a href="order.html">Đặt bàn</a></li>
                     <li><a href="news.html">Tin nổi bật</a></li>
-                    <li><a  href="contact.html">Liên hệ</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
 
                 <ul class="collapse" id="collapseExample">
-                    <li><a class="active"  href="">Trang chủ</a></li>
+                    <li><a class="active" href="">Trang chủ</a></li>
                     <li><a href="intro.html">Giới thiệu</a></li>
                     <li><a href="menu.html">Thực đơn</a></li>
                     <li><a href="order.html">Đặt bàn</a></li>
                     <li><a href="news.html">Tin nổi bật</a></li>
-                    <li><a  href="contact.html">Liên hệ</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
                     <li><a href="tel:0904 999 222 ">0904 999 222 </a></li>
                     <li><a href="tel:024 37 345 678 ">024 37 345 678</a></li>
                     <li><a href="tel: 024 38 789 789 "> 024 38 789 789 </a></li>
@@ -158,11 +158,11 @@
                             <div class="input-icons">
                                 <input type="text" placeholder="SỐ KHÁCH" class="form-control" />
                                 <div class="input-icon customer-count">
-                                    <button type="button">
+                                    <button type="button" onclick="$('#total').html($('#total').html() > 1 ? +$('#total').html() - 1 : 1)">
                                         <img src="image/minus_icon.svg" />
                                     </button>
-                                    <span>12</span>
-                                    <button type="button">
+                                    <span id="total">1</span>
+                                    <button type="button" onclick="$('#total').html(+$('#total').html() + 1)">
                                         <img src="image/plus_icon.svg" />
                                     </button>
 
@@ -171,14 +171,14 @@
                         </div>
                         <div class="col-md-4">
                             <div class="input-icons">
-                                <input type="date" placeholder="NGÀY" class="form-control" />
-                                <img class="input-icon" src="image/calendar_icon.svg" />
+                                <input type="date" placeholder="NGÀY" class="form-control" value="20/10/2020" />
+                                <!-- <img class="input-icon" src="image/calendar_icon.svg" /> -->
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="input-icons">
-                                <input type="time" placeholder="GIỜ" class="form-control" />
-                                <img class="input-icon" src="image/calendar_icon.svg" />
+                                <input type="time" placeholder="GIỜ" class="form-control" value="00:00" />
+                                <!-- <img class="input-icon" src="image/calendar_icon.svg" /> -->
                             </div>
                         </div>
                     </div>
