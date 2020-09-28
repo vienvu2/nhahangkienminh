@@ -185,7 +185,7 @@ a:hover{
 
 .banner-promo {
     min-height: 608px;
-    background-image: url(/image/home-promo.jpg);
+    background-image: url(./../image/home-promo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -250,7 +250,7 @@ a:hover{
 
 }
 .banner-order {
-    background: url(/image/bg-order.jpg);
+    background: url(./../image/bg-order.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -422,7 +422,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .banner-title {
     height: 336px;
-    background: url(/image/banner-title.jpg);
+    background: url(./../image/banner-title.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 140px;
