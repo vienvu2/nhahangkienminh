@@ -44,6 +44,9 @@ body {
     font-family: "SFU-helvetica";
     color: black;
 }
+a:hover{
+    text-decoration: none;
+}
 
 .header-top {
     min-height: 96px;
